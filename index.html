@@ -111,7 +111,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/uiuc-hand"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -158,6 +158,12 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-teleop-counting">
+          <video poster="" id="teleop-counting" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/tendon_hand_teleop_counting.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
         <div class="item item-tendon-hand">
           <video poster="" id="tendon-hand" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/tendon_hand.mp4"
@@ -179,12 +185,6 @@
         <div class="item item-single-finger">
           <video poster="" id="single-finger" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/tendon_single_finger.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-teleop-counting">
-          <video poster="" id="teleop-counting" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tendon_hand_teleop_counting.MOV"
                     type="video/mp4">
           </video>
         </div>
@@ -240,10 +240,10 @@
         <div class="content">
           <h2 class="title is-3">Vision based teleoperation</h2>
           <p>
-            Using <i>nerfies</i> To teleoperate the hand, we use HAMER, a vision-based transformer to extract MANO hand poses, and directly translate it to the hand.
+            To teleoperate the hand, we use HAMER, a vision-based transformer to extract MANO hand poses, and directly translate it to the hand.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tendon_hand_control.mov"
+            <source src="./static/videos/tendon_hand_teleop_counting.MOV"
                     type="video/mp4">
           </video>
         </div>
@@ -269,16 +269,16 @@
     </div>
     <!--/ Matting. -->
 
-    <!-- Animation. -->
+    <!-- TESTS. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">TESTS</h2>
 
         <!-- Re-rendering. -->
         <h3 class="title is-4">Repeatability testing</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, we can test how repeatable the hand is, showing very little error during continuous operation of the hand.
+            We can test how repeatable the hand is, showing very little error during continuous operation of the hand.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -287,7 +287,7 @@
                  muted
                  preload
                  playsinline
-                 width="75%">
+                 width="50%">
             <source src="./static/videos/uiuc_hand_grasping_test.mov"
                     type="video/mp4">
           </video>
@@ -326,11 +326,7 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/uiuc-hand" class="external-link">
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -343,11 +339,8 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This website template is based on <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
         </div>
       </div>
