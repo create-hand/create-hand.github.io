@@ -245,16 +245,51 @@
                    muted
                    preload
                    playsinline
-                   width="100%">
+                   style="max-height: 400px; width: auto;">
               <source src="./static/videos/uiuc_hand_grasping_test.mov"
                       type="video/mp4">
             </video>
           </div>
           <div class="column is-half has-text-centered">
-            <img src="./static/images/Figure_1.png" alt="Repeatability testing results" width="100%">
+            <img src="./static/images/Figure_1.png" alt="Repeatability testing results" style="max-height: 400px; width: auto;">
           </div>
         </div>
         <!--/ Re-rendering. -->
+
+        <!-- Force Testing. -->
+        <h3 class="title is-4">Force Testing Comparison</h3>
+        <div class="content has-text-justified">
+          <p>
+            Force testing comparison using ArUco codes for tracking motor bend angle. Our hand shows much stronger force before bending to 15 degrees compared to the LEAP Lite hand (both using the same Dynamixel motors).
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            <h4 class="subtitle is-5">UIUC Hand</h4>
+            <video id="uiuc-force-video"
+                   controls
+                   muted
+                   preload
+                   playsinline
+                   style="max-height: 400px; width: auto;">
+              <source src="./static/videos/uiuc_hand.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-half has-text-centered">
+            <h4 class="subtitle is-5">LEAP Lite Hand</h4>
+            <video id="leap-force-video"
+                   controls
+                   muted
+                   preload
+                   playsinline
+                   style="max-height: 400px; width: auto;">
+              <source src="./static/videos/leap_hand.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!--/ Force Testing. -->
 
       </div>
     </div>
